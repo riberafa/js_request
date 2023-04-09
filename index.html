@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Blog Fake</title>
+        <title>Conselhos Do dia!</title>
         <link rel="stylesheet" type="text/css" href="./styles.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     </head>
@@ -12,23 +12,30 @@
         <div class="screenBlog">
             <section id="searchPost">
                 <div class="titleSearch">
-                    <p><span class="titleSerchPart1">SECRET</span> POST</p>
+                    <p><span class="titleSerchPart1">CONSELHOS</span> API</p>
                 </div>
                 <div class="footerSearchPost">
                     <div class="searchBar">
                         <input class="input" type="text" placeholder="Pesquise 'Segredo #nº' para encontrar um segredo"></input>
                     </div>
                     <button class="searchButton">Pesquisar</button>
-                    <button class="createButton">Criar um segredo!</button>
+                    <button class="createButton">Criar um conselho!</button>
                 </div>
             </section>
             <section id="listAllPosts">
-                <div class="postArea">
-                    <p class="title">SECRET 1</p>
+                <div class="postArea" onClick="selectSecret()">
+                    <p class="title">CONSELHO 1</p>
                     <i class="material-icons">question_mark</i>
                 </div>
             </section>
         </section>
+
+        <div id="blurEffect" onClick="selectSecret()"></div>
+        <div id="secretModalInfos">
+            <p class="mainTitle"><span class="mainTitleStylePart">CONSELHO</span> 55:</p>
+            <button class="closeModal" onClick="selectSecret()">x</button>
+            <p class="secretContent">Remember that spiders are more afraid of you, than you are of them.</p>
+        </div>
         <script type="text/javascript" src="./scripts.js"></script>
     </body>
 </html>
