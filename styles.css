@@ -1,0 +1,129 @@
+*{
+    margin:0 !important;
+    padding: 0 !important;
+    font-family: Arial, Helvetica, sans-serif;
+} 
+
+body{
+    background: radial-gradient(circle at 18.7% 37.8%, rgb(250, 250, 250) 0%, rgb(225, 234, 238) 90%);;
+}
+
+.screenBlog{
+    height: 100px;
+    width: 100vw;
+    background-color: #333333;
+}
+
+#searchPost{
+    width: 800px;
+    height: 150px;
+    display: flex;
+    margin: auto !important;
+    display: flex;
+    flex-direction: column;
+}
+
+.titleSearch{
+    color: #FFFFFF;
+    font-size: 1em;
+    margin: 44px auto 10px auto !important;
+    text-align: center;
+    font-weight: bold;
+}
+
+.titleSerchPart1{
+    color: #C8D958;
+}
+
+.searchBar{
+    height: 30px;
+    width: 70%;
+    display: flex;
+    margin: 10px auto 20px auto !important;
+    background-color: white;
+    border-radius: 5px;
+    border: 0.2px solid #333333;
+}
+
+.input{
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.footerSearchPost{
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+    width: 90%;
+    margin: 0 auto !important;
+}
+
+.searchButton{
+    width: 80px;
+    height: 30px;
+    margin: 10px auto 20px auto !important;
+    background-color: #C8D958 ;
+    border: transparent;
+    color: #000F27;
+    cursor: pointer;
+}
+
+.createButton {
+    width: 120px;
+    height: 30px;
+    margin: 10px auto 20px auto !important;
+    background-color: #C8D958 ;
+    border: transparent;
+    cursor: pointer;
+}
+
+.searchButton:hover,
+.createButton:hover{
+    background-color: #7a862b ;
+    color: white;
+}
+
+#listAllPosts{
+    height: auto;
+    width: 800px;
+    margin: 20px auto !important;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+    grid-gap: 25px;
+}
+
+.postArea{
+    height: 120px;
+    width: 120px;
+    background-color: #000F27;
+    display: flex;
+    margin: 20px auto !important;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+}
+.postArea:hover{
+    background-color: #C8D958;
+}
+
+.postArea:hover > .material-icons,
+.postArea:hover > .title { 
+    color: #000F27;
+}
+
+.title{
+    font-size: 0.7em;
+    margin: 10px auto !important;
+    color: white;
+}
+
+.material-icons{
+    font-size: 4em !important;
+    color: #C8D958;
+}
